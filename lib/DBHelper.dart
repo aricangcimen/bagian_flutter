@@ -1,6 +1,7 @@
 import 'package:path_provider/path_provider.dart';
 import 'package:sqflite/sqflite.dart';
-
+import 'dart:io' as io;
+import 'dart:async';
 
 class DBHelper{
   static final DBHelper _instance = new DBHelper.internal();
@@ -16,7 +17,13 @@ class DBHelper{
 
   }
 
-  setDB() async
+  setDB() async{
+    io.Directory directory = await getApplicationDocumentsDirectory();
+    String path = join(directory.path , "SimpleNoteDB");
+    var dB = await openDatabase(path, version: 1, oncreate:  _oncreate)
+    return dB
+
+  }
 
 
 
