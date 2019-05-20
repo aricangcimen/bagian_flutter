@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:package/NotePage.dart;
+import 'package:bagian_FLUTTER/NotePage.dart;
 void main()=> runApp(new MyApp());
 
 class MyApp extends StatelessWidget {
