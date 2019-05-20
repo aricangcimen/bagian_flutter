@@ -13,10 +13,18 @@ class Notepage  extends StatefulWidget {
 }
 
 class _Notepage State extends State<Notepage > {
+ String title;
   @override
   Widget build(BuildContext context) {
+   
+   if(widget._isNew){
+     title = " new Note";
+
+   }
+   
+   
     return scaffold(
-      appBar:  AppBar(title: )
+      appBar:  AppBar(title: Text(title , style: TextStyle(color: Colors.white , fontSize = 20.0)) )
       
     );
   }
