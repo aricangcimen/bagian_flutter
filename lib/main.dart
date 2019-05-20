@@ -23,6 +23,12 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      floatingActionButton: FloatingActionButton(
+        child : Icon(Icon.edit , color : Colors.white,),
+        backgroundColor : Colors.purple,
+        onPressed: ()=> Navigator.of(context).push(MaterialPageRoute(builder: (BuildContext context) -> new Notepage())),
+
+      )
       appBar: AppBar(
         leading: Container(
         padding : EdgeInsets.all(8.0),
