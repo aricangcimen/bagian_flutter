@@ -18,7 +18,7 @@ class _Notepage State extends State<Notepage > {
   Widget build(BuildContext context) {
    
    if(widget._isNew){
-     title = " new Note";
+     title = "New Note";
 
    }
    
