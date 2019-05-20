@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import 'package:package/NotePage.dart;
 void main()=> runApp(new MyApp());
 
 class MyApp extends StatelessWidget {
@@ -26,7 +26,7 @@ class _HomePageState extends State<HomePage> {
       floatingActionButton: FloatingActionButton(
         child : Icon(Icon.edit , color : Colors.white,),
         backgroundColor : Colors.purple,
-        onPressed: ()=> Navigator.of(context).push(MaterialPageRoute(builder: (BuildContext context) => new Notepage())),
+        onPressed: ()=> Navigator.of(context).push(MaterialPageRoute(builder: (BuildContext context) => new Notepage(null , true))),
 
       )
       appBar: AppBar(
