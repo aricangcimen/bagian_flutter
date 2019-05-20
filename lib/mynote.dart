@@ -23,8 +23,8 @@ class Mynote{
 
     Map<String , dynamic> tomap(){
       var map = Map<String, dynamic>();
-      map["title"] = title;
-      map["note"] = note;
+      map["title"] = _title;
+      map["note"] = _note;
       map["createDate"] = _createDate;
       map["updateDate"] = _updateDate;
       map["sortDate"] = _sortDate;
