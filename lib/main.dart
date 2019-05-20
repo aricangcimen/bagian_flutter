@@ -26,7 +26,7 @@ class _HomePageState extends State<HomePage> {
       floatingActionButton: FloatingActionButton(
         child : Icon(Icon.edit , color : Colors.white,),
         backgroundColor : Colors.purple,
-        onPressed: ()=> Navigator.of(context).push(MaterialPageRoute(builder: (BuildContext context) -> new Notepage())),
+        onPressed: ()=> Navigator.of(context).push(MaterialPageRoute(builder: (BuildContext context) => new Notepage())),
 
       )
       appBar: AppBar(
