@@ -34,7 +34,7 @@ void _oncreate (Database db , int version) async {
 Future<int> saveNot(Mynote mynote) async {
 
 var dbClient = await db;
-int res = await dbClient.insert("mynote",toMap());
+int res = await dbClient.insert("mynote",mynote.toMap());
 print("data inserted");
 return res;
 }
