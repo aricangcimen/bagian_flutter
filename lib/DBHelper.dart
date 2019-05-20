@@ -21,7 +21,7 @@ class DBHelper{
     io.Directory directory = await getApplicationDocumentsDirectory();
     String path = join(directory.path , "SimpleNoteDB");
     var dB = await openDatabase(path, version: 1, oncreate:  _oncreate)
-    return dB
+    return dB;
 
   }
 void _oncreate (Database db , int version) async {
