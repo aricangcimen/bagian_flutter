@@ -24,6 +24,12 @@ class DBHelper{
     return dB
 
   }
+void _oncreate (Database db , int version) async {
+  await db.execute("CREATE TABLE mynote(id INTEGER PRIMARY KEY , title TEXT , note TEXT , createDate TEXT ,
+   updateDate TEXT , sortDate TEXT )");
+   print ("DB Created");
+
+  }
 
 
 
